@@ -1,0 +1,4 @@
+model,threshold_bps,number_of_trades,net_pnl_dollars,average_trade_bps,win_rate,profit_factor,maximum_drawdown_dollars
+ridge,0.0,0,0.0,,,,
+hist_gradient_boosting,0.0,0,0.0,,,,
+random_forest,0.0,0,0.0,,,,

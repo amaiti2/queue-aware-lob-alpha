@@ -1,0 +1,4 @@
+model,selected_threshold_bps,validation_number_of_trades,validation_net_pnl_dollars,validation_average_trade_bps,validation_win_rate,long_validation_mae_bps,long_validation_ic,short_validation_mae_bps,short_validation_ic
+ridge,0.0,0,0.0,,,1.056666172050272,0.3982718717881133,1.0775672680243158,0.42360089487110386
+hist_gradient_boosting,0.0,0,0.0,,,1.0534312594688078,0.39238056806526933,1.0996379672478676,0.397837889140847
+random_forest,0.0,0,0.0,,,1.0633754966620472,0.3737968838375424,1.0928040281357918,0.41390148098479884

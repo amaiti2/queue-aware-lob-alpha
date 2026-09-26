@@ -1,0 +1,116 @@
+{
+  "configuration": {
+    "level": 5,
+    "event_stride": 1,
+    "latency_rows": 10,
+    "horizon_rows": 100,
+    "commission_bps_per_side": 0.0,
+    "slippage_ticks_per_side": 1.0,
+    "tick_size_dollars": 0.01,
+    "notional_dollars": 10000.0,
+    "minimum_validation_trades": 30,
+    "flow_windows": [
+      20,
+      100,
+      500
+    ],
+    "random_state": 42,
+    "chunk_size": 500000
+  },
+  "observations": {
+    "train": 239735,
+    "validation": 79838,
+    "test": 79949
+  },
+  "selected_model": "ridge",
+  "selected_threshold_predicted_net_bps": 0.0,
+  "validation_approved_for_later_shadow_replay": false,
+  "decision": "NO_TRADE: validation economics failed",
+  "validation_prediction_metrics": {
+    "long": {
+      "mae_bps": 1.056666172050272,
+      "rmse_bps": 1.3356310563328966,
+      "information_coefficient": 0.3982718717881133,
+      "directional_accuracy": 0.9736591597985922
+    },
+    "short": {
+      "mae_bps": 1.0775672680243158,
+      "rmse_bps": 1.3427415979827075,
+      "information_coefficient": 0.42360089487110386,
+      "directional_accuracy": 0.9671710213181693
+    }
+  },
+  "validation_trading_metrics": {
+    "number_of_trades": 0,
+    "net_pnl_dollars": 0.0,
+    "average_trade_bps": null,
+    "win_rate": null,
+    "profit_factor": null,
+    "maximum_drawdown_dollars": null
+  },
+  "test_prediction_metrics": {
+    "long": {
+      "mae_bps": 1.0159920733712207,
+      "rmse_bps": 1.2997121194892238,
+      "information_coefficient": 0.4317305939171173,
+      "directional_accuracy": 0.9625886502645437
+    },
+    "short": {
+      "mae_bps": 1.0017471606215549,
+      "rmse_bps": 1.2824909217201077,
+      "information_coefficient": 0.48152824444496023,
+      "directional_accuracy": 0.9477041614028944
+    }
+  },
+  "test_target_summary": {
+    "mean_long_net_return_bps": -2.253033132701538,
+    "mean_short_net_return_bps": -2.120841530414289
+  },
+  "test_trading_metrics": {
+    "number_of_trades": 1,
+    "net_pnl_dollars": -1.2069173606430514,
+    "average_trade_bps": -1.2069173606430514,
+    "median_trade_bps": -1.2069173606430514,
+    "win_rate": 0.0,
+    "profit_factor": 0.0,
+    "maximum_drawdown_dollars": 0.0
+  },
+  "validation_model_comparison": [
+    {
+      "model": "ridge",
+      "selected_threshold_bps": 0.0,
+      "validation_number_of_trades": 0,
+      "validation_net_pnl_dollars": 0.0,
+      "validation_average_trade_bps": null,
+      "validation_win_rate": null,
+      "long_validation_mae_bps": 1.0566661721,
+      "long_validation_ic": 0.3982718718,
+      "short_validation_mae_bps": 1.077567268,
+      "short_validation_ic": 0.4236008949
+    },
+    {
+      "model": "hist_gradient_boosting",
+      "selected_threshold_bps": 0.0,
+      "validation_number_of_trades": 0,
+      "validation_net_pnl_dollars": 0.0,
+      "validation_average_trade_bps": null,
+      "validation_win_rate": null,
+      "long_validation_mae_bps": 1.0534312595,
+      "long_validation_ic": 0.3923805681,
+      "short_validation_mae_bps": 1.0996379672,
+      "short_validation_ic": 0.3978378891
+    },
+    {
+      "model": "random_forest",
+      "selected_threshold_bps": 0.0,
+      "validation_number_of_trades": 0,
+      "validation_net_pnl_dollars": 0.0,
+      "validation_average_trade_bps": null,
+      "validation_win_rate": null,
+      "long_validation_mae_bps": 1.0633754967,
+      "long_validation_ic": 0.3737968838,
+      "short_validation_mae_bps": 1.0928040281,
+      "short_validation_ic": 0.413901481
+    }
+  ]
+}

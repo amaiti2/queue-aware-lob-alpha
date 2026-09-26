@@ -1,0 +1,2 @@
+signal_event_number,signal_event_time,side,shares,predicted_long_net_bps,predicted_short_net_bps,predicted_net_return_bps,realized_signed_mid_return_bps,realized_net_return_bps,execution_drag_bps,entry_price,exit_price,net_return_bps,pnl_dollars
+325008,55188.651856516,-1,17,-5.324395331335559,0.010658777194070268,0.010658777194070268,0.258602854975587,-1.2069173606430514,1.4655202156186384,579.99,580.06,-1.2069173606430514,-1.2069173606430514
